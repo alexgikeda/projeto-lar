@@ -1,0 +1,28 @@
+# Build results
+bin/
+obj/
+*.exe
+*.dll
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Secrets or configs
+appsettings.Development.json
+secrets.json
+
+# Node modules (se estiver usando React junto)
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
