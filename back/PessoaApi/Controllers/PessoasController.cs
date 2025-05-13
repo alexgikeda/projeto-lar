@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using PessoaApi.DTOs;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -24,23 +25,23 @@ public class PessoasController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> AdicionarPessoa([FromBody] Pessoa pessoa)
+    public async Task<IActionResult> AdicionarPessoa([FromBody] PessoaDTO pessoaDto)
     {
-        await _repository.Adicionar(pessoa);
-        return CreatedAtAction(nameof(ConsultarPessoasPorCpf), new { cpf = pessoa.Cpf }, pessoa);
+        await _repository.Adicionar(pessoaDto);
+        return CreatedAtAction(nameof(ConsultarPessoasPorCpf), new { cpf = pessoaDto.Cpf }, pessoaDto);
     }
 
-    [HttpPut]
-    public async Task<IActionResult> AlterarPessoa([FromBody] Pessoa pessoa)
+    [HttpPut("{cpf}")]
+    public async Task<IActionResult> AlterarPessoa(string cpf,[FromBody] PessoaDTO pessoaDto)
     {
-        await _repository.Alterar(pessoa);
+        await _repository.Alterar(cpf, pessoaDto);
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> ExcluirPessoa(int id)
+    [HttpDelete("{cpf}")]
+    public async Task<IActionResult> ExcluirPessoa(string cpf)
     {
-        await _repository.Excluir(id);
+        await _repository.Excluir(cpf);
         return NoContent();
     }
 }

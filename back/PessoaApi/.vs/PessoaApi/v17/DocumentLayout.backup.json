@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18279964-C43F-4044-9CFE-8B725B80B9BD}|PessoaApi.csproj|c:\\users\\ccb\\desktop\\lar\\projeto-lar\\back\\pessoaapi\\repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18279964-C43F-4044-9CFE-8B725B80B9BD}|PessoaApi.csproj|solutionrelative:repositories\\pessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18279964-C43F-4044-9CFE-8B725B80B9BD}|PessoaApi.csproj|c:\\users\\ccb\\desktop\\lar\\projeto-lar\\back\\pessoaapi\\controllers\\pessoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18279964-C43F-4044-9CFE-8B725B80B9BD}|PessoaApi.csproj|solutionrelative:controllers\\pessoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18279964-C43F-4044-9CFE-8B725B80B9BD}|PessoaApi.csproj|c:\\users\\ccb\\desktop\\lar\\projeto-lar\\back\\pessoaapi\\repositories\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18279964-C43F-4044-9CFE-8B725B80B9BD}|PessoaApi.csproj|solutionrelative:repositories\\ipessoarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18279964-C43F-4044-9CFE-8B725B80B9BD}|PessoaApi.csproj|c:\\users\\ccb\\desktop\\lar\\projeto-lar\\back\\pessoaapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18279964-C43F-4044-9CFE-8B725B80B9BD}|PessoaApi.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPessoaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\Repositories\\IPessoaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IPessoaRepository.cs",
+              "ToolTip": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\Repositories\\IPessoaRepository.cs",
+              "RelativeToolTip": "Repositories\\IPessoaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T22:25:51.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PessoaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\Repositories\\PessoaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PessoaRepository.cs",
+              "ToolTip": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\Repositories\\PessoaRepository.cs",
+              "RelativeToolTip": "Repositories\\PessoaRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowFIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T01:28:50.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PessoasController.cs",
+              "DocumentMoniker": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\Controllers\\PessoasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PessoasController.cs",
+              "ToolTip": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\Controllers\\PessoasController.cs",
+              "RelativeToolTip": "Controllers\\PessoasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T21:37:48.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\CCB\\Desktop\\Lar\\projeto-lar\\back\\PessoaApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T21:53:58.166Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

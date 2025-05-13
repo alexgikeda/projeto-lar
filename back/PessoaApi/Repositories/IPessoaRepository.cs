@@ -1,8 +1,10 @@
+using PessoaApi.DTOs;
+
 public interface IPessoaRepository
 {
-    Task<List<Pessoa>> ConsultarTodas();
-    Task<Pessoa?> ConsultarPorCpf(string cpf);
-    Task Adicionar(Pessoa pessoa);
-    Task Alterar(Pessoa pessoa);
-    Task Excluir(int pessoaId);
+    Task<List<PessoaDTO>> ConsultarTodas();
+    Task<PessoaDTO?> ConsultarPorCpf(string cpf);
+    Task Adicionar(PessoaDTO pessoaDto);
+    Task Alterar(string cpf, PessoaDTO pessoaDto);
+    Task Excluir(string cpf);
 }
