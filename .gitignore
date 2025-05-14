@@ -10,6 +10,9 @@ obj/
 *.userosscache
 *.sln.docstates
 
+# Visual Studio (pasta de configurações locais)
+.vs/
+
 # Visual Studio Code settings
 .vscode/
 
