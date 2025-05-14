@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
+import { Trash2 } from "lucide-react";
+import { SquarePen } from "lucide-react";
+import { Search } from "lucide-react";
+import { Plus } from "lucide-react";
 
 const API_URL = "https://localhost:7240/api/Pessoas";
 
@@ -19,6 +23,7 @@ function App() {
   const buscarTodas = async () => {
     const response = await axios.get(API_URL);
     setPessoas(response.data);
+    setCpfBusca("");
   };
 
   const buscarPorCpf = async () => {
@@ -109,9 +114,9 @@ function App() {
         />
         <button
           onClick={buscarPorCpf}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
+          className="bg-gray-500 hover:bg-gray-700 text-white px-4 py-2 rounded"
         >
-          Buscar
+          <Search />
         </button>
         <button
           onClick={buscarTodas}
@@ -177,7 +182,10 @@ function App() {
               />
             </div>
           ))}
-          <button onClick={adicionarTelefone} className="text-blue-600 mt-2">
+          <button
+            onClick={adicionarTelefone}
+            className="text-sky-500 hover:text-sky-700 mt-2"
+          >
             + Adicionar Telefone
           </button>
         </div>
@@ -201,7 +209,7 @@ function App() {
                   telefones: [{ tipo: "", numero: "" }],
                 });
               }}
-              className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded"
+              className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded"
             >
               Cancelar
             </button>
@@ -245,15 +253,15 @@ function App() {
                 <td className="border p-2">
                   <button
                     onClick={() => editarPessoa(p)}
-                    className="text-blue-600 hover:underline mr-2"
+                    className="text-zinc-600 hover:underline mr-2"
                   >
-                    Editar
+                    <SquarePen className="text-zinc-500 hover:text-zinc-700" />
                   </button>
                   <button
                     onClick={() => excluirPessoa(p.cpf)}
                     className="text-red-600 hover:underline"
                   >
-                    Excluir
+                    <Trash2 />
                   </button>
                 </td>
               </tr>
