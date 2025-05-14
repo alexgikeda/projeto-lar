@@ -1,0 +1,15 @@
+CREATE TABLE PESSOA (
+    PessoaId        NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Cpf              VARCHAR2(30) UNIQUE NOT NULL,
+    Nome             VARCHAR2(200) NOT NULL,
+    DataNascimento   DATE NOT NULL,
+    EstaAtivo        CHAR(1) NOT NULL
+);
+
+CREATE TABLE TELEFONE (
+    TelefoneId  NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    Tipo         VARCHAR2(30) NOT NULL,
+    Numero       VARCHAR2(30) NOT NULL,
+    PessoaId    NUMBER NOT NULL,
+    CONSTRAINT fk_pessoa FOREIGN KEY (PessoaId) REFERENCES PESSOA(PessoaId)
+);
